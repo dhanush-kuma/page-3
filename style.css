@@ -15,7 +15,6 @@ html, body {
       height: 100%;
       margin: 0;
       padding: 0;
-      font-family: Helvetica, Arial, sans-serif;
   }
   
   
@@ -27,7 +26,7 @@ html, body {
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     color: var(--primary-text-color);
     background-color: var(--background-color);
 }
@@ -300,6 +299,10 @@ section {
     position: relative;
 }
 
+.text-container{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
 .about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
