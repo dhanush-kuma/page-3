@@ -1,11 +1,12 @@
 /* LOADER */
 :root{
-    --background-color : #E8F9FD;
+    --background-color : #EEEEEE;
     --primary-text-color: #000000;
-    --Highlight-text-color: #59CE8F;
+    --Highlight-text-color: #068FFF;
     --border-color: #000000;
     --black-color: #222831;
     --white-color: #EEEEEE;
+    --shadow-color: #4E4FEB;
 }
 .page {
     padding: 40px;
@@ -356,7 +357,8 @@ section {
 }
 
 .btn-color-1:hover {
-    background: var(--white-color);
+    background: var(--shadow-color);
+    border: none;
 }
 
 .btn-color-2 {
@@ -403,8 +405,9 @@ section {
     flex: 1;
     background: var(--background-color);
     border-radius: 2rem;
-    border: var(--black-color) 0.1rem solid;
+    border: var(--black-color) 0.2rem solid;
     border-color: var(--border-color);
+    box-shadow: 0.8rem 0.8rem var(--shadow-color);
     text-align: center;
 }
 
@@ -498,9 +501,10 @@ article .icon {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
-    border: var(--black-color) 0.1rem solid;
+    border: var(--black-color) 0.2rem solid;
     border-color: var(--border-color);
     background: var(--background-color);
+    box-shadow: 0.8rem 0.8rem var(--shadow-color);
     margin: 2rem auto;
     padding: 0.5rem;
 }
