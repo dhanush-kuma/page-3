@@ -419,7 +419,9 @@ article .icon {
     flex-direction: column;
     height: 70vh;
 }
-
+.contact-a:hover {
+    text-decoration: none;
+}
 .contact-info-upper-container {
     display: flex;
     justify-content: center;
