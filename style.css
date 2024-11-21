@@ -241,6 +241,7 @@ section {
 }
 .link-icons:hover{
     stroke: var(--Highlight-text-color);
+    fill: none;
 }
 
 /* BUTTONS */
