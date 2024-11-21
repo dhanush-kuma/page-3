@@ -171,10 +171,9 @@ a:hover {
 
 section {
     padding-top: 4vh;
-    height: 96vh;
+    min-height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
-    min-height: fit-content;
 }
 
 .section-container {
@@ -388,15 +387,18 @@ article .icon {
 
 /* PROJECTS SECTIONS */
 
+
 #projects {
     position: relative;
+    padding: 2rem 0;
 }
-.margin-top {
-    margin-top: 2rem;
+.project-details-container {
+    display: grid;
 }
-.disabled {
-    visibility: hidden;
+.disabled.project-btn-container {
+    display: none;
 }
+
 .color-container {
     border-color: var(--border-color);
     background: var(--background-color);
@@ -404,28 +406,51 @@ article .icon {
 
 .project-img {
     border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    width: 100%;  
+    height: auto;
 }
 
 .project-title {
     margin: 1rem;
     color: var(--primary-text-color);
 }
-
+.project-btn-container{
+    width: 280px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
 .project-btn {
     color: var(--primary-text-color);
     border-color: var(--border-color);
 }
+
 .project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 2rem;
+    padding: 1rem 1rem;
+    overflow: hidden;
+}
+
+.details-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 5rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--background-color);
+    border-radius: 2rem;
+    border: var(--border-color) 0.2rem solid;
+    box-shadow: 0.8rem 0.8rem var(--shadow-color);
 }
-.ghost {
-    box-shadow: none;
-    border: none;
+
+.project-btn {
+    margin-top: 1rem;
+    width: 100%; 
 }
+
 /* CONTACT */
 
 #contact {
@@ -433,6 +458,7 @@ article .icon {
     justify-content: center;
     flex-direction: column;
     height: 70vh;
+    min-height: fit-content;
 }
 .contact-a:hover {
     text-decoration: none;
