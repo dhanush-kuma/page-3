@@ -262,12 +262,14 @@ section {
 }
 
 .btn-color-1, .btn-color-2 {
-    border: var(--border-color) 0.1rem solid;
+    border: var(--border-color) 0.2rem solid;
+    box-shadow: 0.3rem 0.3rem var(--shadow-color);
     color: var(--primary-text-color);
 }
 
 .btn-color-1:hover, .btn-color-2:hover {
     cursor: pointer;
+    box-shadow: none;
 }
 
 .btn-color-1, .btn-color-2:hover {
@@ -389,7 +391,12 @@ article .icon {
 #projects {
     position: relative;
 }
-
+.margin-top {
+    margin-top: 2rem;
+}
+.disabled {
+    visibility: hidden;
+}
 .color-container {
     border-color: var(--border-color);
     background: var(--background-color);
@@ -410,7 +417,15 @@ article .icon {
     color: var(--primary-text-color);
     border-color: var(--border-color);
 }
-
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.ghost {
+    box-shadow: none;
+    border: none;
+}
 /* CONTACT */
 
 #contact {
