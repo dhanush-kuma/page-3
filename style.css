@@ -25,6 +25,10 @@ html, body {
     padding: 0;
 }
 
+.jconfirm .jconfirm-box {
+  max-width: 600px !important;
+}
+
 body {
     font-family: "Nunito Sans", sans-serif;
     color: var(--primary-text-color);
