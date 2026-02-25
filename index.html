@@ -357,21 +357,23 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-confirm@3.3.4/js/jquery-confirm.min.js"></script>
-    <script src="script.js"></script><script>
+    <script src="script.js"></script>
+    <script>
       $(function () {
-        $.confirm({
-          title: 'Just a heads up',
-          content: 'This website is over 2 years old, so some information may no longer be accurate. A new site with dynamic, regularly updated content is in the works. Thanks for your patience!',
-          type: 'orange',
-          theme: 'modern',
-          buttons: {
-            ok: {
-              text: 'Got it',
-              btnClass: 'btn-orange'
+          $.confirm({
+            title: 'Just a heads up',
+            content: 'This website is over 2 years old, so some information may no longer be accurate, links(Github, Linkedin, leetcode) and Resume are upto date. Instead of changing the existing data, I thought building a new site is better investment, A new site with dynamically rendered data and componenets :)',
+            type: 'green',
+            theme: 'modern',
+            boxWidth: '380px',
+            buttons: {
+              ok: {
+                text: 'Got it',
+                btnClass: 'btn-green'
+              }
             }
-          }
+          });
         });
-      });
     </script>
 </body>
 </html>
